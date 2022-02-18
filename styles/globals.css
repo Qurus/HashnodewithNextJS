@@ -1,16 +1,115 @@
-html,
-body {
-  padding: 0;
+/* Reset */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+body {
+  font-family: sans-serif;
+}
+
+/* Header Styles */
+
+.header {
+  background-color: rgb(4, 25, 94);
+  height: 5em;
+  border-bottom: 5px solid rgb(60, 127, 172);
+}
+
+.header-main {
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(31, 31, 31, 0.95);
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+}
+
+.main {
+  width: 100%;
+  background-color: rgb(197, 196, 196);
+}
+
+.card-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.uenmedia {
+  width: 90%;
+  margin: 0.5em auto;
+  background-color: rgba(31, 31, 31, 0.95);
+  border: 2px solid rgb(173, 223, 169);
+}
+
+.uenmedia-image,
+.description {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.uenmedia-image {
+  padding: 1.2em 1em;
+}
+
+.description {
+  padding: 1em 2em;
+}
+
+.uenmedia-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-  color: inherit;
+  color: white;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+.description h2 {
+  padding-bottom: 0.5em;
+}
+
+/* FLEXBOX STYLES */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .card-container {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .uenmedia {
+    flex: 1 0 48%;
+    margin: 1%;
+  }
+}
+@media (min-width: 1001px) {
+  .uenmedia {
+    flex: 1 0 31%;
+  }
+
+  .uenmedia:last-of-type {
+    flex-grow: 0;
+  }
 }
