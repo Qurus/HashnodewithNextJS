@@ -5,6 +5,7 @@ This is a hashnode API with NextJS.
 Installation:
 
 First Edit pages/index.js file, change my username with yours.
+And change blog url on card.
 
 ```bash
 npm install
