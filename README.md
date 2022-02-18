@@ -4,7 +4,7 @@ This is a hashnode API with NextJS.
 
 Installation:
 
-First Edit pages/index.js file to change your username with mine.
+First Edit pages/index.js file, change my username with yours.
 
 ```bash
 npm install
